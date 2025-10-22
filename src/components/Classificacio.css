@@ -1,0 +1,261 @@
+
+
+.classificacio-container {
+  position: absolute;
+  display: flex;
+  margin-top: -9px;
+  margin-left: -1px;
+  height: 1103px;
+  width: 1962px;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)); /* Gradiente de arriba a abajo */
+  transition: opacity 1s ease-in-out; /* transición suave de 1 segundo */
+}
+
+
+/* =========================================== */
+/* == CAPÇALERA                                */
+/* =========================================== */
+
+
+.classificacio-patrocinador {
+  width: 260px;
+  height: 80px;
+  margin-left: 163px;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.classificacio-top {
+  width: fit-content;
+  height: 49px;
+  background-color: #e80b28;
+  margin-left: 163px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center; 
+  margin-right: 40px;
+}
+
+.classificacio-top-text {
+    font-family: 'Medium', sans-serif; /* Define la fuente */
+    font-size: 43px; /* Define el tamaño de la fuente */
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.classificacio-cursa {
+  width: fit-content;
+    height: 49px;
+    background-color: rgba(0, 0, 0, 0.599);
+    margin-left: 250px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center; 
+}
+
+.classificacio-cursa-text {
+    font-family: 'Medium', sans-serif; /* Define la fuente */
+    font-size: 40px; /* Define el tamaño de la fuente */
+    color: #ffffff;
+    margin-left: 22px;
+}
+
+.classificacio-provisional {
+  width: 240px;
+  height: 66px;
+  background-color: rgb(0, 203, 123);
+  margin-left: 650px;
+  margin-top: -49px;
+  transform: skewX(-16deg);
+  display: flex;
+  justify-content: center; /* alineación horizontal */
+  align-items: center;         /* alineación vertical (o usa flex-start si lo quieres arriba) */
+}
+
+
+.classificacio-provisional-text {
+    font-family: 'Bold', sans-serif; /* Define la fuente */
+    font-size: 24px; /* Define el tamaño de la fuente */
+    color: #000000;
+    margin-left: 0px;
+}
+
+/* =========================================== */
+/* == TAULA                                    */
+/* =========================================== */
+
+.classificacio-taula-container {
+    width: 900px; /*EDAD = 528, NORMAL = 728*/
+    height: 530px;
+    margin-left: 163px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.classificacio-taula-rows {
+    margin-top: 2px;
+    width: 900px; /*728*/
+    height: 49px;
+    display: flex;
+    /*background-color: black;*/
+    color: #000000;
+}
+
+.classificacio-taula-posicio {
+    width: 10%;
+    height: 49px;
+    background-color: #e80b28;
+    transform: skewX(-16deg);
+    margin-left: -13px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+ 
+}
+
+.classificacio-taula-posicio-text {
+    font-size: 43px; /* Define el tamaño de la fuente */
+    color: #ffffff;
+    margin-left: 5px;
+    transform: skewX(16deg);
+    font-family: 'Medium', sans-serif; /* Define la fuente */
+}
+
+.classificacio-taula-pais {
+    width: 35px;
+    height: 38px;
+    margin-left: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.classificacio-taula-nom {
+    margin-left: 45px;
+    width: 45%;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: 43px;
+    font-family: 'Medium', sans-serif; /* Define la fuente */
+}
+
+.classificacio-taula-dorsal {
+    margin-left: 10px;
+    width: 14%;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    font-size: 43px;
+    font-family: 'Medium', sans-serif; /* Define la fuente */
+}
+
+.classificacio-taula-equip {
+    margin-left: 30px;
+    width: 100px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+}
+
+.classificacio-taula-checkpoint {
+    margin-left: 17px;
+    width: 160px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+}
+
+.classificacio-taula-temps {
+    margin-left: 40px;
+    width: 100px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+}
+.classificacio-taula-gap {
+  justify-content: flex-end; /* Alinea el texto a la derecha */
+  align-items: center; /* Alinea el texto verticalmente al centro */
+  margin-left: 10px;
+  width:30%;
+  height: 49px;
+  display: flex;
+  font-size: 43px;
+  font-family: 'Medium', sans-serif; /* Define la fuente */
+}
+
+@keyframes slideDown {
+    0% {
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideLeftTitol {
+    0% {
+      opacity: 1;
+      transform: translateX(-230%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideLeftClas {
+    0% {
+      transform: translateX(-110%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slideRightClas {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-180%);
+    }
+  }
+
+  @keyframes slideDownLeader {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(210%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUpLeader {
+    0% {
+      transform: translateY(200%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  .visible2 {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out; /* Opcional para una transición suave */
+  }
+  
+  .invisible2 {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Opcional para una transición suave */
+  }
+  

@@ -1,0 +1,87 @@
+.on-time-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    top: 35px;
+    left: 100px;
+    overflow: hidden;
+  }
+
+  .on-time-rect {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 4px 12px;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    height: 49px;
+    width: 250px;
+    font-family: 'Light', sans-serif; /* Define la fuente */
+    /*border: 5px solid rgb(0, 203, 123);*/
+
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #e80b28;
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    z-index: 999;
+  }
+  
+  .on-time-icon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .on-time-text {
+    font-weight: bold;
+    margin-left: 60px;
+    color: white;
+  }
+  
+
+@keyframes slideLeftOnTime {
+    0% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slideRightOnTime {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-140%);
+    }
+  }
+
+  @keyframes slideDownOnTime {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(110px);
+    }
+  }
+  
+  @keyframes slideUpOnTime {
+    from {
+      transform: translateY(110px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+  

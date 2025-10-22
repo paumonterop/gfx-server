@@ -1,0 +1,57 @@
+  @keyframes CursaSlideLeftTitol {
+    0% {
+      opacity: 1;
+      transform: translateX(-230%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+    @keyframes CursaSlideRightClas {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-240%);
+    }
+  }
+
+.chart-wrapper {
+  width: 100%;       /* ancho final del chart */
+  height: 250px;     /* altura fija */
+  overflow: hidden;  /* oculta lo que está fuera */
+  position: relative;
+}
+
+.chart-reveal {
+  width: 100%;       /* ya tiene el tamaño final */
+  height: 100%;
+  transform-origin: left center;  /* origen del “descubrimiento” a la izquierda */
+  clip-path: inset(0 100% 0 0);  /* empieza oculto completamente */
+  animation: reveal 2s forwards; /* ajusta la duración de la animación */
+}
+
+@keyframes reveal {
+  0% {
+    clip-path: inset(0 100% 0 0); /* totalmente oculto */
+  }
+  100% {
+    clip-path: inset(0 0 0 0);     /* totalmente visible */
+  }
+}
+
+/* Puedes mantener tu animación de ocultar altura igual */
+@keyframes hideHeight {
+  0% {
+    height: 250px;
+    opacity: 1;
+    transform-origin: top center;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+    transform-origin: top center;
+  }
+}

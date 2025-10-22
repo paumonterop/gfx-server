@@ -1,0 +1,313 @@
+.footer-container {
+    position: absolute;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Alinea los elementos en columnas */
+    margin-top: 977px;
+    width: 1932px;
+    height: 108px;
+    overflow: hidden;
+}
+
+
+.footer-rect-hora {
+    width: 243px;
+    height: 109px;
+    background-color: rgb(0, 203, 123);
+    transform: skewX(-16.5deg);
+    display: flex;
+    align-items: center;
+    margin-left: -16px;
+    z-index: 3;
+    position: relative;
+}
+
+.footer-rect-hora-text {
+    font-family: 'Bold', sans-serif; /* Define la fuente */
+    font-size: 36px; /* Define el tamaño de la fuente */
+    color: #000000;
+    display: flex;
+    align-items: center; 
+    margin-left: 55px;
+    transform: skewX(7deg);
+}
+
+.footer-rect-coment {
+
+}
+
+.footer-rect-left {
+    background-image: url('../images/rect_red.png');
+    background-size: 84%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 103px;  /* Asegúrate de agregar un ancho */
+    height: 109px; /* Asegúrate de agregar una altura */
+    margin-top: -109px;
+    margin-left: 216px;
+    position: relative;
+    z-index: 4;
+}
+
+.footer-rect-right {
+    background-image: url('../images/rect_red.png');
+    background-size: 84%;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 103px;  /* Asegúrate de agregar un ancho */
+    height: 109px; /* Asegúrate de agregar una altura */
+    margin-top: -109px;
+    margin-left: 1477px;
+    position: relative;
+    z-index: 4;
+}
+
+.footer-rect-black {
+    width: 1700px; /*1192px*/
+    height: 109px;
+    background-color: rgb(0, 0, 0);
+    transform: skewX(-16.5deg);
+    display: flex;
+    align-items: center;
+    margin-left: 293px;
+    margin-top: -109px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-rect-black-text {
+    font-family: 'Bold', sans-serif; /* Define la fuente */
+    font-size: 35px; /* Define el tamaño de la fuente */
+    color: #ffffff;
+    display: flex;
+    align-items: center; 
+    margin-left: 30px;
+    transform: skewX(7deg);
+}
+
+.footer-rect-black-left {
+    width: 385px;
+    height: 109px;
+    background-color: rgb(0, 0, 0);
+    transform: skewX(-16.5deg);
+    display: flex;
+    align-items: center;
+    margin-left: 1556px;
+    margin-top: -109px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.footer-rect-black-pos-container {
+    width: 1130px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.footer-rect-black-pos-container-dalt {
+    width: 1130px;
+    height: 35px;
+    font-family: 'Bold', sans-serif; /* Define la fuente */
+    font-size: 32px; /* Define el tamaño de la fuente */
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    align-items: center; 
+    margin-top: 5px;
+}
+
+.footer-rect-black-pos-container-baix {
+    width: 1130px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    align-items: center; 
+}
+
+.footer-rect-pos {
+    margin-left: 20px;
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.footer-rect-pos-foto {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    transform: skewX(16deg);
+}
+
+.footer-rect-pos-text {
+    font-family: 'Bold', sans-serif; /* Define la fuente */
+    font-size: 28px; /* Define el tamaño de la fuente */
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    align-items: center; 
+}
+
+
+@keyframes slideUpFoot {
+    0% {
+      opacity: 1;
+      transform: translateY(150%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+@keyframes slideDownFoot {
+    0% {
+      opacity: 1;
+      transform: translateY(0%) skewX(-16.5deg);
+      
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(150%) skewX(-16.5deg);
+    }
+  }
+
+  @keyframes slideDownFoot2 {
+    0% {
+      opacity: 1;
+      transform: translateY(0%);
+      
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(150%);
+    }
+  }
+
+  @keyframes slideDownFoot3 {
+    0% {
+      opacity: 1;
+      transform: translateY(0%) skewX(0deg);
+      
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(150%) skewX(0deg);
+    }
+  }
+
+  @keyframes slideRightFoot {
+    0% {
+        transform: translateX(-130%) skewX(-16.5deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%) skewX(-16.5deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRightFoot2 {
+    0% {
+        transform: translateX(-320%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRightFoot3 {
+    0% {
+        transform: translateX(-130%) skewX(-16.5deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%) skewX(-16.5deg);
+        opacity: 1;
+    }
+}
+@keyframes slideRightFoot4 {
+    0% {
+        transform: translateX(-530%) skewX(-16.5deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%) skewX(-16.5deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownPos {
+    0% {
+      transform: translateY(-190%);
+    }70%{
+        transform: translateY(-190%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  .ticker {
+    white-space: nowrap;
+    /*animation: moveTicker 80s linear infinite; /* Ajusta la duración según sea necesario */
+    display: flex; /* Mostrar elementos en una fila */
+
+  }
+  
+  @keyframes moveTicker {
+    from {
+      transform: translateX(2.3%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .ticker-item {
+    margin-right: 50px; /* Ajusta el espacio entre los elementos del ticker */
+  }
+  
+  .text-punt {
+    font-family: 'BRSonoma-Bold', sans-serif; /* Define la fuente */
+    font-size: 35px; /* Define el tamaño de la fuente */
+    color: white;
+    margin-right: 20px;
+  }
+
+  .text-bold {
+    font-family: 'BRSonoma-Bold', sans-serif; /* Define la fuente */
+    font-size: 35px; /* Define el tamaño de la fuente */
+    color: white;
+    margin-right: 20px;
+  }
+  .text-resultat {
+    font-family: 'BRSonoma-Bold', sans-serif; /* Define la fuente */
+    font-size: 35px; /* Define el tamaño de la fuente */
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .text-barra {
+    color: #ff0000; /* Color de la barra */
+    font-family: 'BRSonoma-Bold', sans-serif; /* Define la fuente */
+    font-size: 35px; /* Define el tamaño de la fuente */
+    margin-right: 20px;
+  }
+  
+  .text-light {
+    color: #ffffff; /* Color del texto claro */
+    font-family: 'BRSonoma-Light', sans-serif; /* Define la fuente */
+    font-size: 35px; /* Define el tamaño de la fuente */
+    margin-right: 20px;
+  }
+
+  .container-output2 {
+    display: flex;
+    flex-direction: column;
+  }
+

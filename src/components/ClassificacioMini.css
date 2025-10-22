@@ -1,0 +1,197 @@
+
+
+.classificacio-container-mini {
+    position: absolute;
+    display: flex;
+    margin-top: -9px;
+    margin-left: -100px;
+    height: 1103px;
+    width: 1962px;
+  }
+  
+  
+  /* =========================================== */
+  /* == CAPÇALERA                                */
+  /* =========================================== */
+  
+  
+  .classificacio-patrocinador-mini {
+    width: 260px;
+    height: 80px;
+    margin-left: 163px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  
+  .classificacio-top-mini {
+    width: fit-content;
+    background-color: #e80b28;
+    margin-left: 163px;
+    margin-top: 10px;
+    display: flex;
+    height: 34px;
+    align-items: center; 
+    margin-right: 40px;
+  }
+  
+  .classificacio-top-text-mini {
+      font-family: 'Medium', sans-serif; /* Define la fuente */
+      font-size: 34px; /* Define el tamaño de la fuente */
+      color: #ffffff;
+      margin-left: 10px;
+      margin-top: 2px;
+  }
+  
+  .classificacio-cursa-mini {
+    width: fit-content;
+      height: 34px;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-left: 250px;
+      margin-top: 7px;
+      display: flex;
+      align-items: center; 
+  }
+  
+  .classificacio-cursa-text-mini {
+      font-family: 'Medium', sans-serif; /* Define la fuente */
+      font-size: 34px; /* Define el tamaño de la fuente */
+      color: #ffffff;
+      margin-left: 22px;
+  }
+  
+  /* =========================================== */
+  /* == TAULA                                    */
+  /* =========================================== */
+  
+  .classificacio-taula-container-mini {
+      width: 600px; /*EDAD = 528, NORMAL = 728*/
+      height: 330px;
+      margin-left: 163px;
+      margin-top: 20px;
+      overflow: hidden;
+  }
+  
+  .classificacio-taula-rows-mini {
+      margin-top: 2px;
+      width: 900px; /*728*/
+      height: 34px;
+      display: flex;
+      background-color: (0, 0, 0, 0.8);  }
+  
+  .classificacio-taula-posicio-mini {
+      width: 10%;
+      height: 34px;
+      background-color: #e80b28;
+      transform: skewX(-16deg);
+      margin-left: -13px;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centra horizontalmente */
+   
+  }
+  
+  .classificacio-taula-posicio-text-mini {
+      font-size: 34px; /* Define el tamaño de la fuente */
+      color: #ffffff;
+      margin-left: 5px;
+      transform: skewX(16deg);
+      height: 34px;
+      font-family: 'Medium', sans-serif; /* Define la fuente */
+  }
+  
+  
+  .classificacio-taula-nom-mini {
+      margin-left: 45px;
+      width: 32%;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      font-size: 34px;
+      font-family: 'Medium', sans-serif; /* Define la fuente */
+  }
+  
+  .classificacio-taula-gap-mini {
+    justify-content: flex-end; /* Alinea el texto a la derecha */
+    align-items: center; /* Alinea el texto verticalmente al centro */
+    margin-left: 10px;
+    width:20%;
+    height: 34px;
+    display: flex;
+    font-size: 34px;
+    font-family: 'Medium', sans-serif; /* Define la fuente */
+  }
+  
+  @keyframes slideDown {
+      0% {
+        opacity: 1;
+        transform: translateY(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes slideLeftTitol {
+      0% {
+        opacity: 1;
+        transform: translateX(-230%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    @keyframes slideLeftClas {
+      0% {
+        transform: translateX(-110%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  
+    @keyframes slideRightClas {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-180%);
+      }
+    }
+  
+    @keyframes slideDownLeader {
+      0% {
+        transform: translateY(0%);
+      }
+      100% {
+        transform: translateY(210%);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes slideUpLeader {
+      0% {
+        transform: translateY(200%);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+  
+    .visible2 {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out; /* Opcional para una transición suave */
+    }
+    
+    .invisible2 {
+      opacity: 0;
+      transition: opacity 2s ease-in-out; /* Opcional para una transición suave */
+    }
+    

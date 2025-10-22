@@ -1,0 +1,61 @@
+@keyframes FadeInVelo {
+    0% {
+      opacity: 0;
+    }100% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes FadeOutVelo {
+    0% {
+      opacity: 1;
+    }100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes FadeInVeloText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes FadeOutVeloText {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .fadeInText {
+    animation: FadeInVeloText 1s ease-in-out forwards;
+    animation-delay: 1s; /* Retardo de 1 segundo antes de iniciar la animación */
+  }
+  
+  .fadeOutText {
+    animation: FadeOutVeloText 1s ease-in-out forwards;
+  }
+
+  .fadeInBars {
+    animation: FadeInVeloText 0.1s ease-in-out forwards;
+    animation-delay: 0.99s; /* Retardo de 1 segundo antes de iniciar la animación */
+  }
+  
+  .fadeOutBars {
+    animation: FadeOutVeloText 0.5s ease-in-out forwards;
+  }
+
+  .icon {
+    width: 500px;
+    height: 500px;
+    margin-left: 1755px;
+    background-position: center;
+    background-size: cover;
+    z-index: 9999;
+  }
+  
